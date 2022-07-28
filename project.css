@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+.project-section{
+    padding-top: 200px;
+    margin-top: 0px;
+}
+.project-section h2{
+    margin-bottom: 300px;
+    color: #ffffff;
+    text-shadow: #00000059 10px 10px 1px;
+}
+.project-head-second{
+    margin-bottom: 100px;
+}

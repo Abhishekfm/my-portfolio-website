@@ -15,3 +15,15 @@
 .project-head-second{
     margin-bottom: 100px;
 }
+
+
+@media screen and (max-width:860px) {
+    .project-section{
+        padding-top: 100px;
+    }
+}
+@media screen and (max-width:436px) {
+    .project-section{
+        padding-top: 50px;
+    }
+}

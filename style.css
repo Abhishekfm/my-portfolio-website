@@ -31,6 +31,7 @@
 .nav-items li{
     padding-top: 20px;
     list-style-type: none;
+    position: relative;
 }
 .nav-items li a{
     /* font-family: 'Poppins', sans-serif; */
@@ -53,45 +54,45 @@
 .home:hover div{
     position:absolute;
     border-bottom: 3px solid #E76930;
-    top: 39px;
-    left: 603px;
-    width: 60px;
+    top: 28px;
+    left: -5px;
+    width: 54px;
     animation: cut 0.5s 1;
 }
 .project:hover div{
     position:absolute;
     border-bottom: 3px solid #E76930;
-    top: 39px;
-    left: 800px;
-    width: 70px;
+    top: 28px;
+    left: -5px;
+    width: 65px;
     animation: cut 0.5s 1;
 }
 .about:hover div{
     position:absolute;
     border-bottom: 3px solid #E76930;
-    top: 39px;
-    left: 1010px;
-    width: 60px;
+    top: 28px;
+    left: -5px;
+    width: 54px;
     animation: cut 0.5s 1;
 }
 .contact:hover div{
     position:absolute;
     border-bottom: 3px solid #E76930;
-    top: 39px;
-    left: 1205px;
-    width: 75px;
+    top: 28px;
+    left: -5px;
+    width: 70px;
     animation: cut 0.5s 1;
 }
 .hero-img{
     position: absolute;
-    top: 10px;
-    left:350px;
+    top: 0px;
+    left:20%;
     z-index: -1;
-    width: 940px;
+    width: 70%;
     /* transform: rotate(110deg); */
 }
 .hero-text{
-    padding-top: 250px;
+    padding-top: 270px;
     padding-bottom: 70px;
     padding-left: 80px;
     text-align: center;
@@ -119,7 +120,10 @@
     color: #E6E6EA;
     z-index: -1;
     bottom: 30px;
-    right: 465px;
+    /* right: 465px; */
+    width: 100%;
+    text-align: center;
+    right: 0px;
 
 }
 .card-img img{
@@ -133,8 +137,8 @@
 }
 .all-cards{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2,1fr) ;
+    /* grid-template-rows: 1fr 1fr 1fr; */
     justify-content: center;
     row-gap: 60px;
     column-gap: 60px;
@@ -155,7 +159,7 @@
     border-radius: 10px;
     font-weight: 600;
     font-size: 14px;
-    width: 25%;
+    /* width: 25%; */
     /* box-shadow: 0px 10px 15px #00000059; */
     text-decoration: none;
 }
@@ -164,8 +168,10 @@
     background:none;
     color: #000000;
     border: 2px solid #000000;
-    width: 25%;
+    /* width: 25%; */
 }
+
+
 @keyframes btn-anime {
     0%{background: linear-gradient(90deg, #E76930 20%, #ffffff 60%);}
     25%{background: linear-gradient(90deg, #E76930 40%, #ffffff 70%);}
@@ -244,17 +250,22 @@
 .about-section img{
     /* margin-right: 150px; */
     padding-left: 90px;
+    width: 100%;
 }
 .about-head{
     margin-bottom: 0px;
     margin-top: 320px;
 }
 .about-head h1 span{
-    right: 540px;
+    /* right: 540px; */
+    left: -0px;
+    width: 100%;
+    right: 0px;
+    text-align: center;
 }
 .abhi{
     padding-top: 100px;
-    padding-left: 40px;
+    padding-left: 240px;
 }
 .abhi h1{
     font-family: 'Saira Stencil One', cursive;
@@ -295,10 +306,11 @@
 }
 .project-short-head span{
     position: absolute;
-    font-size: 55px;
+    font-size: 40px;
     color: #e6e6ea;
-    bottom: 20px;
-    left: 640px;
+    /* bottom: 20px; */
+    left: 0px;
+    text-align: end;
     z-index: -1;
     font-weight: 900;
 }
@@ -376,4 +388,281 @@ footer img{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
+}
+.project-short-head h1 span{
+    font-size: 65px;
+}
+.card1 div .blog-btn{
+    text-align: center;
+    display: block;
+    margin-left: 130px;
+}
+.card1 div .blog-btn a{
+    text-align: center;
+    margin-left: 0px;
+}
+
+
+@media screen and (max-width:1400px) {
+    .hero-text{
+        padding-top: 15%;
+        font-size: 15px;
+
+    }
+    .all-cards{
+        margin: 0px 20px;
+    }
+}
+@media screen and (max-width:1245px) {
+    .all-cards{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .card-img img{
+        width: 100%;
+    }
+    .card1 div div{
+        display: flex;
+        justify-content: space-around;
+    }
+    .btn{
+        margin-right: 0px;
+    }
+    .card1 div .blog-btn{
+        text-align: center;
+        display: block;
+        margin-left: 0px;
+    }
+    .about-section img{
+        padding-top: 50px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:964px) {
+    .blob{
+        width: 80%;
+        left: 15%;
+    }
+    .about-section img{
+        margin: 0px;
+        padding: 0px;
+        padding-top: 30px;
+    }
+    .abhi h1{
+        font-size: 40px;
+    }
+    .abhi{
+        padding-left: 0px;
+    }
+    .abhi p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:742px) {
+    .blob{
+        margin-top: 0px;
+        width: 100%;
+        left: 10%;
+    }
+    .hero-text{
+        padding-top: 20%;
+        font-size: 12px;
+    }
+    .nav-items{
+        margin-right: 0px;
+    }
+    .nav{
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+    .top-btn{
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    .abhi{
+        width: 100%;
+    }
+    .about-section{
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .program-skill{
+        margin-left: 10px;
+    }
+    .program-skill .language img{
+        padding: 3px 4px;
+    }
+    .exp-count h6{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .project-head h1 span{
+        font-size: 72px;
+        transform: translate(0px,10px);
+    }
+    .project-head h1{
+        font-size: 68px;
+    }
+    .project-head h2{
+        font-size: 20px;
+    }
+    .project-short-head h1{
+        font-size: 58px;
+    }
+    .project-short-head h1 span{
+        font-size: 62px;
+        transform: translate(0px,10px);
+    }
+    #project1 .project-head h1{
+        font-size: 58px;
+    }
+    #project1 .project-head h1 span{
+        font-size: 62px;
+        transform: translate(0px,10px);
+    }
+}
+
+@media screen and (max-width:532px) {
+    .hero-text{
+        /* padding-bottom: 20px; */
+        padding-left: 0px;
+        font-size: 10px;
+        padding-top: 24%;
+    }
+    .hero-text h1{
+        text-align: center;
+        padding: 0px 25px;
+    }
+    .blob{
+        width: 100%;
+        top: 20px;
+        left: 0%;
+    }
+    .nav-items li a{
+        font-size: 12px;
+    }
+    .logo h1{
+        font-size: 20px;
+        padding-top: 14px;
+    }
+    .logo{
+        margin-bottom: 0px;
+    }
+    .exp-count h1{
+        margin-right: 0px;
+        margin: 0px;
+    }
+    .exp-count h6{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .abhi{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .skills .language{
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .nav-items{
+        width: 70%;
+    }
+    .about-head{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .program-skill .language{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .hero-text{
+        padding-bottom: 20px;
+    }
+    .about-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .about-me img{
+        width: 200px;
+    }
+    .abhi h1{
+        font-size: 32px;
+    }
+    .abhi h4{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .abhi p{
+        font-size: 12px;
+    }
+    .exp-count h6{
+        margin-left: 3px;
+        margin-right:10px;
+        margin-top: 10px;
+    }
+    .btn-about{
+        margin: 30px 0px;
+    }
+    #contact1 a img{
+        padding: 0px;
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (max-width:388px) {
+    .about-section img{
+        width: 180px;
+    }
+    .project-head h1 span{
+        font-size: 62px;
+        transform: translate(0px,10px);
+    }
+    .project-head h1{
+        font-size: 58px;
+    }
+    .project-head h2{
+        font-size: 17px;
+    }
+    .about-head{
+        margin-top: 100px;
+    }
+    .project-short-head h1{
+        font-size: 48px;
+    }
+    .project-short-head h1 span{
+        font-size: 52px;
+        transform: translate(0px,10px);
+    }
+    #project1 .project-head h1{
+        font-size: 48px;
+    }
+    #project1 .project-head h1 span{
+        font-size: 52px;
+        width: 110%;
+        transform: translate(10px,10px);
+    }
+}
+
+@media screen and (max-width:347px) {
+    .hero-text{
+        padding-top: 50px;
+        font-size: 9px;
+    }
+    .top-btn{
+        padding: 5px 10px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .about-me{
+        width: 30%;
+    }
+    .about-me img{
+        opacity: 0.3;
+    }
 }

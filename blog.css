@@ -12,3 +12,22 @@
 .project-head h1{
     margin-top: 250px;
 }
+
+
+
+@media screen and (max-width:854px) {
+    .project-head h1{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width:441px) {
+    .project-head h1{
+        width: 120%;
+        margin-top: 100px;
+    }
+    .project-head h1 span{
+        width: 120%;
+    }
+}
+

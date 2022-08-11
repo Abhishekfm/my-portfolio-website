@@ -615,9 +615,9 @@ footer img{
     }
 }
 
-@media screen and (max-width:388px) {
+@media screen and (max-width:396px) {
     .about-section img{
-        width: 180px;
+        width: 170px;
     }
     .project-head h1 span{
         font-size: 62px;
@@ -647,6 +647,10 @@ footer img{
         width: 110%;
         transform: translate(10px,10px);
     }
+    .about-section img{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
 }
 
 @media screen and (max-width:347px) {
@@ -664,5 +668,13 @@ footer img{
     }
     .about-me img{
         opacity: 0.3;
+    }
+}
+
+
+@media screen and (max-width:367px) {
+    .about-section img{
+        width: 150px;
+        /* background-size: cover; */
     }
 }
